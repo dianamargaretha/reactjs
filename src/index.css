@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+}
+a {
+    color: #ffffff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #ffffff;
+    background-color: #005d63;
+}
+.navbar-brand {
+    background: url(kumparan-icon.svg) 0 no-repeat;
+    padding: 0;
+    margin-left: 0!important;
+    margin-right: 15px!important;
+    width: 150px;
+    position: relative;
+}
+.navbar-inverse {
+    background-color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.navbar-brand h3 {
+    font: 0/0 a;
+    margin: 0;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #005d63;
+}
+.sidebar {
+    display: none;
+}
+.list-wrap {
+    list-style: none;
+    padding-left: 0;
+}
+.list-wrap > li {
+    line-height: 3;
+}
+.list-wrap > li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #00a5af;
+        border-right: 1px solid #eee;
+    }
+}
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
